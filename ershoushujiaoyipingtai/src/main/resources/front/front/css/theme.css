@@ -1,0 +1,438 @@
+/*定义全局css*/
+body {
+
+	/* 红 */
+    /* 1 全局公共主颜色 */
+    --publicMainColor: #f06f4f;
+    /* 1 全局公共副颜色 */
+    --publicSubColor:  #d24a32;
+
+}
+
+/*开始==================================导航栏样式7=========================================开始*/
+#iframe {
+	width: 100%;
+	margin-top: 80px;
+}
+#header {
+	height: auto;
+	background: #fff;
+	border-bottom: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+
+#header .nav-top {
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+	font-size: 14px;
+	color: #2a8a15;
+	box-sizing: border-box;
+	height: 00px;
+	background-color: var(--publicMainColor);
+	box-shadow: 0 10px 8px #fff143;
+	justify-content: space-between;
+	position: relative;
+}
+
+#header .nav-top-img {
+	width: 124px;
+	height: 40px;
+	padding: 0;
+	margin: 0;
+	border-radius: 6px;
+	border-width: 0;
+	border-style: solid;
+	border-color: rgba(0,0,0,.3);
+	box-shadow: 0 0 6px rgba(0,0,0,.3);
+}
+
+#header .nav-top-title {
+	line-height: 40px;
+	font-size: 30px;
+	color: rgba(255, 251, 240, 1);
+	padding: 0 10px;
+	margin: 0 10px;
+	border-radius: 6px;
+	border-width: 0;
+	border-style: solid;
+	border-color: rgba(0,0,0,.3);
+	box-shadow: 0 0 0px ;
+}
+
+#header .nav-top-tel {
+	line-height: 40px;
+	font-size: 18px;
+	color: rgba(240, 252, 255, 1);
+	padding: 0 10px;
+	margin: 0;
+	border-radius: 6px;
+	border-width: 0;
+	border-style: solid;
+	border-color: rgba(0,0,0,.3);
+	box-shadow: 0 0 0px ;
+}
+
+#header .navs {
+	display: flex;
+	padding: 0 20px;
+	align-items: center;
+	box-sizing: border-box;
+	height: 80px;
+	background-color: var(--publicMainColor);
+	box-shadow: 0 0px 0px rgba(0,0,0,0);
+	justify-content: flex-start;
+}
+#header .navs .title {
+	width: auto;
+	line-height: 40px;
+	font-size: 30px;
+	color: rgba(255, 255, 255, 1);
+	padding: 10px 10px 10px;
+	margin: 50px;
+	border-radius: 6px;
+	border-width: 0;
+	border-style: solid;
+	border-color: rgba(0,0,0,.3);
+	box-shadow: 0 0 6px rgba(0,0,0,0);
+}
+#header .navs li {
+	display: inline-block;
+	width: auto;
+	line-height: 66px;
+	padding: 0 10px ;
+	margin: 10px ;
+	color: rgba(255, 255, 255, 1);
+	font-size: 15px;
+	border-radius: 4px;
+	border-width: 0;
+	border-style: solid;
+	border-color: var(--publicMainColor);
+	background-color: var(--publicMainColor);
+	box-shadow: 1px 0 3px var(--publicMainColor);
+	text-align: center;
+}
+#header .navs li a{
+	color: inherit;
+}
+#header .navs li.current a{
+	color: inherit;
+}
+#header .navs li a:hover{
+	color: inherit;
+}
+#header .navs li.current {
+	color: rgba(255, 255, 255, 1);
+	font-size: 22px;
+	border-radius: 0px;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgba(255, 255, 255, 1);
+	background-color: var(--publicMainColor);
+	box-shadow:  0px 3px  0px var(--publicSubColor);
+}
+#header .navs li:hover {
+	color: #fff;
+	font-size: 22px;
+	border-radius: 0px;
+	border-width: 0;
+	border-style: solid;
+	border-color: rgba(255, 255, 255, 1);
+	background-color: var(--publicMainColor);
+	box-shadow:  0px 3px  0px #ffffff;
+}
+/*结束==================================导航栏样式7=========================================结束*/
+
+/*home页面数据样式 开始*/
+	/*home页面数据样式 普通数据样式 开始*/
+.travel-gallery-wrapper {
+	padding-top: 100px;
+}
+
+.single-gallery-item {
+	margin-bottom: 23px;
+}
+.single-gallery-item .img-box {
+	overflow: hidden;
+	border-radius: 5px;
+}
+.single-gallery-item .img-box img {
+	border-radius: 5px;
+	-webkit-transition: all linear 0.2s;
+	transition: all linear 0.2s;
+}
+.single-gallery-item .content {
+	text-align: center;
+}
+.single-gallery-item .content .catagory {
+	margin-top: 10px;
+	display: inline-block;
+	font-size: 25px;
+	font-weight: 500;
+	text-transform: capitalize;
+	color: #333333;
+	font-family: "Playfair Display", serif;
+	-webkit-transition: all linear 0.2s;
+	transition: all linear 0.2s;
+}
+.single-gallery-item .content .catagory:hover {
+	color: #F13B3A;
+}
+.single-gallery-item:hover .img-box img {
+	-webkit-transform: scale(1.02);
+	transform: scale(1.02);
+}
+
+
+.single-gallery-item .img-box {
+	position: relative;
+	-webkit-transition: all linear 0.2s;
+	transition: all linear 0.2s;
+}
+.single-gallery-item .img-box .location {
+	position: absolute;
+	bottom: 15px;
+	left: 22px;
+	font-family: "Playfair Display", serif;
+	font-size: 16px;
+	color: #fff;
+	font-weight: 600;
+	text-transform: capitalize;
+	z-index: 2;
+	opacity: 0;
+	-webkit-transition: all linear 0.2s;
+	transition: all linear 0.2s;
+}
+.single-gallery-item .img-box::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(32%, #7db9e808), to(#00000069));
+	background-image: linear-gradient(to bottom, #7db9e808 32%, #00000069 100%);
+	z-index: 1;
+	opacity: 0;
+	-webkit-transition: all linear 0.2s;
+	transition: all linear 0.2s;
+}
+.single-gallery-item:hover .img-box .location {
+	opacity: 1;
+}
+.single-gallery-item:hover .img-box::after {
+	opacity: 1;
+}
+	/*home页面数据样式 普通数据样式 结束*/
+/*home页面数据样式 结束*/
+
+/*list页面数据样式 开始*/
+	/*list页面数据样式 普通数据样式 开始*/
+.travel-gallery-wrapper {
+	padding-top: 100px;
+}
+
+.single-gallery-item {
+	margin-bottom: 23px;
+}
+.single-gallery-item .img-box {
+	overflow: hidden;
+	border-radius: 5px;
+}
+.single-gallery-item .img-box img {
+	border-radius: 5px;
+	-webkit-transition: all linear 0.2s;
+	transition: all linear 0.2s;
+}
+.single-gallery-item .content {
+	text-align: center;
+}
+.single-gallery-item .content .catagory {
+	margin-top: 10px;
+	display: inline-block;
+	font-size: 25px;
+	font-weight: 500;
+	text-transform: capitalize;
+	color: #333333;
+	font-family: "Playfair Display", serif;
+	-webkit-transition: all linear 0.2s;
+	transition: all linear 0.2s;
+}
+.single-gallery-item .content .catagory:hover {
+	color: #F13B3A;
+}
+.single-gallery-item:hover .img-box img {
+	-webkit-transform: scale(1.02);
+	transform: scale(1.02);
+}
+
+
+.single-gallery-item .img-box {
+	position: relative;
+	-webkit-transition: all linear 0.2s;
+	transition: all linear 0.2s;
+}
+.single-gallery-item .img-box .location {
+	position: absolute;
+	bottom: 15px;
+	left: 22px;
+	font-family: "Playfair Display", serif;
+	font-size: 16px;
+	color: #fff;
+	font-weight: 600;
+	text-transform: capitalize;
+	z-index: 2;
+	opacity: 0;
+	-webkit-transition: all linear 0.2s;
+	transition: all linear 0.2s;
+}
+.single-gallery-item .img-box::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(32%, #7db9e808), to(#00000069));
+	background-image: linear-gradient(to bottom, #7db9e808 32%, #00000069 100%);
+	z-index: 1;
+	opacity: 0;
+	-webkit-transition: all linear 0.2s;
+	transition: all linear 0.2s;
+}
+.single-gallery-item:hover .img-box .location {
+	opacity: 1;
+}
+.single-gallery-item:hover .img-box::after {
+	opacity: 1;
+}
+	/*list页面数据样式 普通数据样式 结束*/
+/*list页面数据样式 结束*/
+
+
+/* 主页 轮播图选择框颜色 主*/
+#test1 .layui-carousel-ind li.layui-this {
+	background-color: var(--publicMainColor, #808080);
+	box-shadow: 0 0 6px var(--publicMainColor, #808080);
+}
+/* 个人中心轮播图 */
+#swiper .layui-carousel-ind li.layui-this {
+	background-color: var(--publicMainColor, #808080);
+	box-shadow: 0 0 6px var(--publicMainColor, #808080);
+}
+
+/* 大部分颜色 主 */
+.main_color {
+	color: var(--publicMainColor, #808080);
+}
+/* 边框颜色 主 */
+.main_borderColor{
+	border-color: var(--publicMainColor, #808080);
+	box-shadow: 0 0 6px var(--publicMainColor, #808080);
+}
+/* 背景颜色 主 */
+.main_backgroundColor {
+	background-color: var(--publicMainColor, #808080);
+}
+/* 登录页面单选按钮颜色 主 */
+.l-redio .layui-form-radioed>i {
+	font-size: 16px;
+	color: var(--publicMainColor, #808080);
+}
+.l-redio .layui-form-radioed>div {
+	font-size: 14px;
+	color: var(--publicMainColor, #808080);
+}
+
+/* 大部分颜色 副 */
+.sub_color {
+	color: var(--publicSubColor, #808080);
+}
+/* 边框颜色 副 */
+.sub_borderColor{
+	border-color: var(--publicSubColor, #808080);
+	box-shadow: 0 0 6px var(--publicSubColor, #808080);
+}
+/* 背景颜色 副 */
+.sub_backgroundColor {
+	background-color: var(--publicSubColor, #808080);
+}
+
+/* 分页颜色 */
+.layui-laypage .layui-laypage-curr .layui-laypage-em {
+	background-color: var(--publicMainColor, #808080);
+}
+
+/* 评论和简介背景颜色 */
+.detail-tab .layui-tab-card>.layui-tab-title .layui-this {
+	background-color: var(--publicMainColor, #808080);
+	color: #fff;
+	font-size: 14px;
+}
+#swiper .layui-carousel-ind li.layui-this {
+	background-color: var(--publicMainColor, #808080);
+}
+
+/* 个人中心 菜单点击颜色*/
+.center-container .layui-nav-tree .layui-nav-item.layui-this {
+	background-color: var(--publicSubColor, #808080);
+}
+/*个人中心 菜单鼠标移上颜色*/
+.center-container .layui-nav-tree .layui-nav-item:hover {
+	background-color:var(--publicMainColor, #808080);
+}
+/*个人中心 菜单下线颜色*/
+.center-container .layui-nav-tree .layui-nav-item {
+	border-color: var(--publicMainColor, #808080);
+	box-shadow: 0 0 0px var(--publicMainColor, #808080);
+}
+/*个人中心 输入框中字体颜色和边框颜色*/
+.right-container .input .layui-input {
+	color: var(--publicMainColor, #808080);
+	border-color: var(--publicMainColor, #808080);
+	box-shadow: 0 0 0px var(--publicMainColor, #808080);
+}
+/*个人中心 下拉框中字体颜色和边框颜色*/
+.right-container .select .layui-input {
+	color: var(--publicMainColor, #808080);
+	border-color: var(--publicMainColor, #808080);
+	box-shadow: 0 0 0px var(--publicMainColor, #808080);
+}
+/*个人中心 未知颜色*/
+.right-container .date .layui-input {
+	border-color: var(--publicMainColor, #808080);
+	box-shadow: 0 0 0px var(--publicMainColor, #808080);
+}
+
+/* 前台elementUI得下拉框内容颜色和边框颜色修改 */
+/* start */
+.el-select-dropdown__item.selected {
+	color: var(--publicMainColor, #808080);
+	font-weight: bold;
+}
+.el-select .el-input.is-focus .el-input__inner {
+	border-color: var(--publicMainColor, #808080);
+}
+.el-input--suffix .el-input__inner{
+	color:var(--publicMainColor, #808080);
+	border-color: var(--publicMainColor, #808080);
+}
+.el-select .el-input__inner:focus {
+	border-color: var(--publicMainColor, #808080);
+}
+/* end */
+/*=====================富文本框字体样式===========================================================================*/
+
+.ql-size-small {
+	font-size: 10px;
+}
+.ql-size-large {
+	font-size: 18px;
+}
+.ql-size-huge {
+	font-size: 32px;
+}
